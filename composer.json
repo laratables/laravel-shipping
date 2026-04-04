@@ -1,6 +1,6 @@
 {
     "name": "laratables/laravel-shipping",
-    "description": "A weight-based shipping cost calculator for Laravel with database-driven weight bands, free shipping thresholds, flat-rate fallback, and a global on/off toggle.",
+    "description": "A weight-based shipping cost calculator for Laravel with database-driven weight bands, free shipping thresholds, flat-rate fallback and a global on/off toggle.",
     "keywords": [
         "laravel",
         "shipping",
