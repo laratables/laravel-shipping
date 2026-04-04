@@ -67,7 +67,7 @@ class ShippingResolver
         return $this->calculator->freeShippingInfo($orderSubtotal);
     }
 
-    public function estimateForProduct(int|string $productId, string $name, float $weightKg = null, float $shippingCost = null, int $quantity = 1, float $orderSubtotal = 0.00): array
+    public function estimateForProduct(int|string $productId, string $name, ?float $weightKg = null, ?float $shippingCost = null, int $quantity = 1, float $orderSubtotal = 0.00): array
     {
         return $this->resolve([['product_id' => $productId, 'name' => $name, 'weight_kg' => $weightKg, 'shipping_cost' => $shippingCost, 'quantity' => $quantity, 'price' => $orderSubtotal]], $orderSubtotal);
     }

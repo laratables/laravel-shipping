@@ -170,11 +170,12 @@ class ShippingResolverTest extends TestCase
         $this->assertEquals(3.99, $result['flat_total']);
     }
 
-    public function test_flat_rate_item_multiplies_shipping_cost_by_quantity()
+    public function test_flat_rate_item_charges_once_per_line_regardless_of_quantity()
     {
+        // Flat rate is charged once per product line not per unit
         $result = $this->resolver()->resolve([$this->flatItem(3.99, 2)]);
 
-        $this->assertEquals(7.98, $result['total_shipping']);
+        $this->assertEquals(3.99, $result['total_shipping']);
     }
 
     public function test_flat_rate_item_appears_in_flat_items_array()
