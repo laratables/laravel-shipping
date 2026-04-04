@@ -1,0 +1,55 @@
+{
+    "name": "laratables/laravel-shipping",
+    "description": "A weight-based shipping cost calculator for Laravel with database-driven weight bands, free shipping thresholds, flat-rate fallback, and a global on/off toggle.",
+    "keywords": [
+        "laravel",
+        "shipping",
+        "ecommerce",
+        "weight",
+        "calculator"
+    ],
+    "homepage": "https://github.com/laratables/laravel-shipping",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Laratables",
+            "email": "hello@laratables.com",
+            "homepage": "https://github.com/laratables"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "illuminate/database": "^10.0|^11.0|^12.0",
+        "illuminate/cache": "^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "phpunit/phpunit": "^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laratables\\Shipping\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Laratables\\Shipping\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laratables\\Shipping\\Providers\\ShippingServiceProvider"
+            ],
+            "aliases": {
+                "Shipping": "Laratables\\Shipping\\Facades\\Shipping"
+            }
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
