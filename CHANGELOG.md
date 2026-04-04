@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.1] - 2025-04-04
+
+### Fixed
+- Explicit nullable types on `estimateForProduct()` parameters to resolve PHP 8.4 deprecation warnings
+- Updated flat rate test to correctly reflect per-line not per-unit charging behaviour
+
+---
+
 ## [1.0.0] - 2025-01-01
 
 ### Added
@@ -36,3 +44,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ---
 
 [1.0.0]: https://github.com/laratables/laravel-shipping/releases/tag/v1.0.0
+[1.0.1]: https://github.com/laratables/laravel-shipping/compare/v1.0.0...v1.0.1
