@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.2.0] - 2026-04-07
+
+### Added
+- Laravel 13 compatibility
+- PHPUnit 12 support
+
+### Notes
+- Laravel 13 users developing on PHP 8.4+ and deploying to PHP 8.3
+  should pin `platform.php` in their project's composer.json.
+  See README for details.
+
+---
+
 ## [1.1.0] - 2026-04-05
 
 ### Added
@@ -53,3 +66,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.0.0]: https://github.com/laratables/laravel-shipping/releases/tag/v1.0.0
 [1.0.1]: https://github.com/laratables/laravel-shipping/compare/v1.0.0...v1.0.1
 [1.1.0]: https://github.com/laratables/laravel-shipping/compare/v1.0.1...v1.1.0
+[1.1.0]: https://github.com/laratables/laravel-shipping/compare/v1.1.0...v1.2.0

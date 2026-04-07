@@ -6,6 +6,21 @@ A weight-based shipping cost calculator for Laravel with database-driven weight 
 
 - PHP 8.2+
 - Laravel 10, 11, 12 or 13
+> **Note for Laravel 13 users:** If you are developing on PHP 8.4 or
+> 8.5 but deploying to a PHP 8.3 environment, add the following to
+> your project's `composer.json` to prevent Composer pulling
+> Symfony 8 components that require PHP 8.4:
+>
+> ```json
+> "config": {
+>     "platform": {
+>         "php": "8.3.0"
+>     }
+> }
+> ```
+>
+> This pins dependency resolution to PHP 8.3 so Composer keeps
+> pulling Symfony 7.4 components compatible with your server.
 
 ## Installation
 
